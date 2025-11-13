@@ -51,6 +51,7 @@ export default function DesktopLanding() {
             controls
             className="w-full h-full object-cover rounded-3xl"
             playsInline
+            poster="/thumbnail.png"
           >
             <source src="/pinkesh-intro.mp4" type="video/mp4" />
           </video>

@@ -40,6 +40,7 @@ export default function Home() {
               controls
               className="w-full h-auto block rounded-2xl"
               playsInline
+              poster="/thumbnail.png"
             >
               <source src="/pinkesh-intro.mp4" type="video/mp4" />
             </video>
