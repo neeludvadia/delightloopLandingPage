@@ -1,5 +1,7 @@
 "use client";
 
+import ExpandableText from "./ExpandableText";
+
 export default function DesktopLanding() {
   return (
     <div className="hidden md:flex flex-col min-h-screen h-full text-gray-800 overflow-x-hidden">
@@ -24,15 +26,19 @@ export default function DesktopLanding() {
       </header>
 
       {/* ================= HERO (Purple Section) ================= */}
-      <section className="relative flex flex-col items-center justify-center text-center px-10 pt-10 pb-44 bg-gradient-to-r from-[#332060] via-[#4b2f9a] to-[#6941C6] z-[5] h-[50vh]">
+      <section className="relative flex flex-col items-center justify-center text-center px-10 pt-5 pb-44 bg-gradient-to-r from-[#332060] via-[#4b2f9a] to-[#6941C6] z-[5] h-[50vh]">
         <h1 className="text-4xl font-bold text-white mb-4">
-          Hello Shashwat!
+          Hey Corrina,
         </h1>
-        <p className="text-white text-lg leading-relaxed max-w-2xl mx-auto">
-          Every Color Tells A Story — And So Does Every Connection. This Color Astrology Book
-          Is Our Way Of Letting You Feel What A Truly Personal Gift Can Be —
-          The Kind DelightLoop Helps You Create.
-        </p>
+        <ExpandableText>
+
+          You’ve been one of those rare voices in B2B marketing who doesn’t just follow trends—you shape them. We would like to get your help in shaping our vision.
+
+HyperPersonalized Physical Nudges have created 3x more opportunities in pipeline with our customers as they build meaningful relationships with prospects & customers through thoughtful gestures.
+DelightLoop 2.0 is our next step to build out full funnel ABX Pipeline Accelerator for Lifecycle Marketing Leaders & we wanted you to be the first one to see it.
+
+Your Insights & comments on LinkedIn will mean the world and add a whole new color to our campaign!
+        </ExpandableText>
 
         {/* Triangle divider (below text) */}
         <div className="absolute -bottom-[45px] left-1/2 -translate-x-1/2 w-[130vw] h-[200px] bg-white clip-triangle shadow-[0_-8px_20px_rgba(99,102,241,0.1)] z-[1]" />
@@ -53,7 +59,7 @@ export default function DesktopLanding() {
             playsInline
             poster="/thumbnail.png"
           >
-            <source src="/pinkesh-intro.mp4" type="video/mp4" />
+            <source src="https://pub-45fbd040baec4f30bc98b8fb212bab3b.r2.dev/testvideo" type="video/mp4" />
           </video>
         </div>
       </div>

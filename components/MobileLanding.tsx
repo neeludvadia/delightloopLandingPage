@@ -1,3 +1,5 @@
+import ExpandableText from "./ExpandableText";
+
 export default function Home() {
   return (
     <div className=" md:hidden min-h-screen bg-white overflow-x-hidden">
@@ -14,11 +16,15 @@ export default function Home() {
       </div>
 
     <h1 className="text-3xl font-bold mb-3">Hello Shashwat!</h1>
-    <p className="text-purple-100 text-sm leading-relaxed">
-      Every Color Tells A Story — And So Does Every Connection. This Color Astrology
-      Book Is Our Way Of Letting You Feel What A Truly Personal Gift Can Be —
-      The Kind DelightLoop Helps You Create.
-    </p>
+   <ExpandableText>
+   
+             You’ve been one of those rare voices in B2B marketing who doesn’t just follow trends—you shape them. We would like to get your help in shaping our vision.
+   
+   HyperPersonalized Physical Nudges have created 3x more opportunities in pipeline with our customers as they build meaningful relationships with prospects & customers through thoughtful gestures.
+   DelightLoop 2.0 is our next step to build out full funnel ABX Pipeline Accelerator for Lifecycle Marketing Leaders & we wanted you to be the first one to see it.
+   
+   Your Insights & comments on LinkedIn will mean the world and add a whole new color to our campaign!
+           </ExpandableText>
   </div>
 
   {/* Actual triangle div */}
@@ -42,7 +48,7 @@ export default function Home() {
               playsInline
               poster="/thumbnail.png"
             >
-              <source src="/pinkesh-intro.mp4" type="video/mp4" />
+              <source src="https://pub-45fbd040baec4f30bc98b8fb212bab3b.r2.dev/testvideo" type="video/mp4" />
             </video>
           </div>
 
