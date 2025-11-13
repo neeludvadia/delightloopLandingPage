@@ -15,7 +15,7 @@ export default function Home() {
             className="w-14 h-14 mx-auto mb-4"
           />
 
-          <h1 className="text-3xl font-bold mb-4">Hello Shashwat!</h1>
+          <h1 className="text-3xl font-bold mb-4">Hey Corrina,</h1>
 
           {/* 🚨 FIX: Wrap ExpandableText in its own container */}
           <div className="max-w-sm mx-auto mb-6">
