@@ -19,7 +19,7 @@ export default function Home() {
 
           {/* 🚨 FIX: Wrap ExpandableText in its own container */}
           <div className="max-w-sm mx-auto mb-6">
-            <ExpandableText maxHeight={150}>
+            <ExpandableText>
               You’ve been one of those rare voices in B2B marketing who doesn’t just follow trends—you shape them. We would like to get your help in shaping our vision.
 
               HyperPersonalized Physical Nudges have created 3x more opportunities in pipeline with our customers as they build meaningful relationships with prospects & customers through thoughtful gestures.

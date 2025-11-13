@@ -29,7 +29,7 @@ export default function DesktopLanding() {
         <h1 className="text-4xl font-bold text-white mb-6">Hey Corrina,</h1>
 
         <div className="max-w-2xl mx-auto">
-          <ExpandableText maxHeight={180}>
+          <ExpandableText>
             You’ve been one of those rare voices in B2B marketing who doesn’t just follow trends—you shape them.
             We would like to get your help in shaping our vision.
 
