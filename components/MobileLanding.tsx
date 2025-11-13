@@ -2,45 +2,50 @@ import ExpandableText from "./ExpandableText";
 
 export default function Home() {
   return (
-    <div className=" md:hidden min-h-screen bg-white overflow-x-hidden">
-      {/* Header with gradient and real triangle div */}
-      <header className="relative bg-gradient-to-r from-[#332060] to-[#6941C6] text-white min-h-[420px] sm:h-[50vh]">
-  <div className="max-w-sm mx-auto pt-8 pb-20 px-4 text-center">  {/* increased bottom padding */}
-    {/* Logo */}
-    <div className="bg-">
-    <img
-      src="/delightloop_logo.svg"
-      alt="logo"
-      className="w-14 h-14 mx-auto mb-4"
-      />
-      </div>
+    <div className="md:hidden min-h-screen bg-white overflow-x-hidden">
+      
+      {/* Header with gradient + triangle */}
+      <header className="relative bg-gradient-to-r from-[#332060] to-[#6941C6] text-white pb-24 pt-10">
 
-    <h1 className="text-3xl font-bold mb-3">Hello Shashwat!</h1>
-   <ExpandableText>
-   
-             You’ve been one of those rare voices in B2B marketing who doesn’t just follow trends—you shape them. We would like to get your help in shaping our vision.
-   
-   HyperPersonalized Physical Nudges have created 3x more opportunities in pipeline with our customers as they build meaningful relationships with prospects & customers through thoughtful gestures.
-   DelightLoop 2.0 is our next step to build out full funnel ABX Pipeline Accelerator for Lifecycle Marketing Leaders & we wanted you to be the first one to see it.
-   
-   Your Insights & comments on LinkedIn will mean the world and add a whole new color to our campaign!
-           </ExpandableText>
-  </div>
+        <div className="max-w-sm mx-auto px-4 text-center">
+          {/* Logo */}
+          <img
+            src="/delightloop_logo.svg"
+            alt="logo"
+            className="w-14 h-14 mx-auto mb-4"
+          />
 
-  {/* Actual triangle div */}
-  <div className="absolute -bottom-[10px] left-1/2 -translate-x-1/2 w-[130vw] h-[110px] bg-white clip-triangle z-10"></div>
-  {/* stars */}
-  <img
-        className="absolute right-0 top-0 w-[20vh]"
-        src={"/starLogo.svg"}
+          <h1 className="text-3xl font-bold mb-4">Hello Shashwat!</h1>
+
+          {/* 🚨 FIX: Wrap ExpandableText in its own container */}
+          <div className="max-w-sm mx-auto mb-6">
+            <ExpandableText maxHeight={150}>
+              You’ve been one of those rare voices in B2B marketing who doesn’t just follow trends—you shape them. We would like to get your help in shaping our vision.
+
+              HyperPersonalized Physical Nudges have created 3x more opportunities in pipeline with our customers as they build meaningful relationships with prospects & customers through thoughtful gestures.
+              DelightLoop 2.0 is our next step to build out full funnel ABX Pipeline Accelerator for Lifecycle Marketing Leaders & we wanted you to be the first one to see it.
+
+              Your Insights & comments on LinkedIn will mean the world and add a whole new color to our campaign!
+            </ExpandableText>
+          </div>
+        </div>
+
+        {/* Triangle divider */}
+        <div className="absolute -bottom-[10px] left-1/2 -translate-x-1/2 w-[130vw] h-[110px] bg-white clip-triangle z-10"></div>
+
+        {/* Star image */}
+        <img
+          className="absolute right-0 top-0 w-[20vh]"
+          src="/starLogo.svg"
         />
-</header>
-
+      </header>
 
       {/* Main content */}
-      <main className="relative -mt-24 px-8 pb-16 z-[100]">
+      {/* 🚨 FIX: Reduce negative margin so it doesn’t overlap too high */}
+      <main className="relative -mt-25 px-6 pb-16 z-[50]">
         <div className="max-w-sm mx-auto w-full box-border">
-          {/* Video card */}
+
+          {/* Video */}
           <div className="rounded-2xl overflow-hidden shadow-lg mb-6 ring-8 ring-white/95">
             <video
               controls
@@ -48,11 +53,14 @@ export default function Home() {
               playsInline
               poster="/thumbnail.png"
             >
-              <source src="https://pub-45fbd040baec4f30bc98b8fb212bab3b.r2.dev/testvideo" type="video/mp4" />
+              <source
+                src="https://pub-45fbd040baec4f30bc98b8fb212bab3b.r2.dev/testvideo"
+                type="video/mp4"
+              />
             </video>
           </div>
 
-          {/* Buttons vertical on mobile */}
+          {/* Buttons */}
           <div className="flex flex-col gap-3">
             <button className="bg-[#6941C6] text-white font-medium py-3 rounded-md w-full">
               DelightLoop 2.0 Intro
@@ -64,6 +72,7 @@ export default function Home() {
               Leave Your Message To Host
             </button>
           </div>
+
         </div>
       </main>
     </div>
